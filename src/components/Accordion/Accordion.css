@@ -1,0 +1,45 @@
+/* .accordion-title{
+    border: solid red 1px;
+    padding: 30px 10px ;
+    margin: 10px;
+    cursor: pointer;
+    
+} */
+
+.accordion-title {
+    border: none; /* Remove red border */
+    background-color: #f8f8f8; /* Light background for the title */
+    padding: 20px; /* Reduced padding for better balance */
+    margin: 10px 0; /* Margin for spacing between titles */
+    cursor: pointer; /* Pointer cursor for interactive title */
+    font-size: 1.4rem; /* Increase font size */
+    font-weight: 500; /* Medium font weight for clarity */
+    color: #333; /* Dark text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+    border-radius: 8px; /* Rounded corners for a soft look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.accordion-title:hover {
+    background-color: #fc8019; /* Swiggy-like orange on hover */
+    color: white; /* White text when hovered */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Increase shadow depth on hover */
+}
+
+.accordion-title:active {
+    background-color: #e6741a; /* Slightly darker orange on click */
+}
+
+.accordion-body {
+    border-top: 1px solid #ddd; /* Light border to separate title and body */
+    padding: 15px; /* Padding for the accordion body */
+    background-color: #fff; /* White background for content */
+    margin-top: -5px; /* Slight overlap for a smooth transition from title */
+}
+
+@media (max-width: 768px) {
+    .accordion-title {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        padding: 15px; /* Adjust padding for better mobile layout */
+    }
+}

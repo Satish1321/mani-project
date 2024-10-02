@@ -1,0 +1,81 @@
+ .restaurant-menu {
+    margin-top: 14vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background to distinguish from content */
+}
+
+.menu-overview {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: flex-start; /* Align content to the start */
+    align-items: center;
+    flex-wrap: wrap;
+    background: #232222; /* Dark background for a sleek look */
+    color: #fff;
+    border-radius: 10px; /* Rounded corners for modern feel */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space between sections */
+    width: 90%; /* Adjust to be centered */
+}
+
+.menu-overview img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.menu-elements {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px; /* Gap between restaurant details */
+}
+
+.res-details h1 {
+    font-size: 1.8rem;
+    color: #fc8019; /* Swiggy-like orange for restaurant name */
+    margin: 0;
+}
+
+.res-details h6 {
+    font-size: 1rem;
+    color: #ccc; /* Lighter color for cuisines */
+    margin: 0;
+}
+
+.res-ratings {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between ratings and other details */
+    margin-top: 10px;
+}
+
+.res-ratings h4 {
+    font-size: 1.2rem;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px; /* Rounded corners for ratings */
+}
+
+
+.accordion-list {
+    width: 90%; /* Adjust width to center */
+    padding: 20px; /* Padding inside accordion list */
+    border: 1px solid #eaeaea; /* Light border */
+    margin-top: 20px; /* Space from menu overview */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.accordion-list .accordion {
+    margin-bottom: 15px; /* Space between accordion items */
+}
+

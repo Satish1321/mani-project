@@ -1,0 +1,123 @@
+/* .accordion-body{
+    border: solid red 1px;
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin: 10px auto;
+}
+
+.acc-img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+    border: solid green 1px;
+}
+.right{
+    position: relative;
+    border: solid rgb(22, 42, 175) 1px;
+}
+
+.right button{
+    
+    position: absolute;
+    right: 80px;
+    
+
+} */
+
+
+.accordion-body {
+    border: 1px solid #eaeaea; /* Light border for clean look */
+    display: flex;
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center; /* Align content vertically */
+    padding: 20px; /* Padding around the content */
+    width: 90%; /* Slightly reduce width for better centering */
+    margin: 15px auto; /* Center the accordion with margin */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners for a modern feel */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth shadow transition on hover */
+}
+
+.accordion-body:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+.acc-img {
+    width: 180px; /* Adjusted width for better scaling */
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Reduce gap for a tighter layout */
+    border: none; /* Remove border for clean look */
+    width: 60%; /* Allow text to take more space */
+}
+
+.left h2 {
+    font-size: 1.5rem; /* Large heading */
+    color: #333; /* Darker text for better readability */
+}
+
+.left h4 {
+    font-size: 1.2rem;
+    
+    color: #000;
+}
+
+.left p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none; /* Remove border */
+    width: 30%; /* Adjust for image and button alignment */
+}
+
+.right button {
+    background-color: #fc8019; /* Swiggy-like orange color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.right button:hover {
+    background-color: #e6741a; /* Slightly darker on hover */
+}
+
+@media (max-width: 768px) {
+    .accordion-body {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left, .right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .right button {
+        position: static;
+        margin-top: 10px;
+    }
+}

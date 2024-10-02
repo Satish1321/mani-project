@@ -1,0 +1,105 @@
+.navbar{
+   display: flex;
+   justify-content: space-between;
+   padding: 5px 30px;
+   font-weight: 560;
+   width: 100vw;
+   height: 14vh;
+   border-radius: 5px;
+   box-shadow: -2px 7px 5px -6px rgba(31, 31, 31, 0.61);
+
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 999;
+   overflow-y: hidden;
+   background-color: #fff;
+   
+
+   /* border: solid 1px orange; */
+
+}
+.logo{
+    width: 70px;
+    height: auto;
+    object-fit: contain;
+}
+
+.nav-items-section{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 30px;  
+}
+.nav-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 20px;
+}
+.nav-items .item{
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+.nav-items .item:hover{
+    color: #fff;
+    background: var(--primary-color);
+}
+
+.log-btn{
+    width: 80px;
+    height: 35px;
+    margin-left: 20px;
+    padding: 10px 19px;
+    border: none;
+    outline: none;
+    background:var(--green-color);
+    color: #fff;
+    border-radius: 9px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.log-btn.toogle{
+    background-color: red;
+}
+
+
+/* Responsive Hamburger menu creation */
+/* Initially creating the demo hamburger-menu */
+
+.hamburger-menu{
+    display: none;
+    gap: 4px;
+    cursor: pointer;
+}
+.hamburger-menu div{
+    border-radius: 12px;
+    width: 25px;
+    height: 3.5px;
+    background-color: var(--primary-color);
+}
+
+
+
+@media(max-width:650px){
+
+
+    .nav-items-section{
+        display: none;
+    }
+    .hamburger-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    
+}
+
+
+

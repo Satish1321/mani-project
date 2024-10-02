@@ -1,0 +1,52 @@
+.body{
+    padding: 50px;
+    margin-top: 14vh;
+   
+}
+.search-bar {
+   
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+  
+  .search-bar input {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-right: none; /* Remove right border to blend with button */
+    outline: none;
+    width: 300px; /* Increase the width of the input box */
+    box-sizing: border-box;
+  }
+  
+  .search-bar button {
+    padding: 10px 15px;
+    background-color:var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: rgb(248, 122, 12);
+    
+  }
+
+.restaurant-cards-containter{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.res-card{
+ text-decoration: none;
+ color: #000;
+}
